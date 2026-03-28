@@ -1,0 +1,128 @@
+/* ESTILO PAGINA PATITAS FELICES */
+
+
+
+/* aplicación de formato al body, color de fondo lightblue */
+body{
+    background-color: lightblue;                    
+}
+
+
+/* aplicación formato a los encabezados h1 y h2, color rojo */
+body h1{                                      
+    color: red;
+/* se agrega un formato de tamaño de fuente y alineación al título */
+    font-size: 40px; 
+    text-align: center;
+}
+
+
+body h2{
+    color: red;
+/* se agrega alineación al centro y estilo cursiva al subtítulo */
+    font-style: italic; 
+    text-align: center;
+}
+
+
+/* aplicación de formato al eslogan color de fuente, tamaño de fuente y alineación al centro */
+#eslogan{                                                                                                        
+    color: brown; 
+    font-size: 20px; 
+    text-align: center;
+}
+
+
+/* aplicación de orden de sus elementos en una fila flexible, separación entre elementos y justifidos al centro */
+section{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* aplicación de formato al artículo, con borde, tamaño, padding y color de fondo */
+article{
+   border: 3px solid olive;
+   width: 860px;
+   padding: 40px;
+   background-color: lightyellow;
+}
+
+
+/* aplicación de formato al contenedor de fotos, con orden de sus elementos en una fila flexible, separación entre elementos y gap */
+#contenedor-fotos{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+/* aplicación de formato a foto 1, con borde y tamaño */
+#contenedor-fotos #fotoperro{
+    border: 2px solid black;
+    width:400px;
+}
+
+
+/* aplicación de formato a foto 2, con borde y tamaño */
+#contenedor-fotos #fotogato{
+    border: 2px solid black;
+    width:400px;
+
+}
+
+
+/* aplicación de formato al parrafo con contenido principal, con alineación justificada para que se distribuya uniformemente */
+#contenido-principal{
+    text-align: justify;
+}
+
+
+/* aplicación de formato al elemento aside, con borde, tamaño, padding y color de fondo */
+aside{
+    border: 3px solid olive;
+    width: 860px;
+    padding: 40px;
+    background-color: lightyellow;
+}
+
+/* aplicación de formato al contenedor de la foto del aside, con alineación al centro */
+#contenedor-foto-aside{
+    text-align: center;
+}
+
+
+/* aplicación de formato a la foto del aside, con borde y tamaño */
+#fotojauria{
+    border: 2px solid black;
+    width: 300px;
+}
+
+/* aplicación de formato al parrafo con mensaje, con estilo cursiva, tamaño de fuente y alineación al centro */
+#mensaje{
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* aplicación de formato al encabezado h3 del aside, con color rojo, alineación al izquierda */
+aside h3{
+    color: red;
+    text-align: left;
+}
+
+/* aplicación de formato al footer, con borde, tamaño, padding y color de fondo */
+footer{
+
+    border: 2px solid olive;
+    padding: 2px;
+    margin-top: 10px;
+    background-color: lightyellow;    
+}
+
+
+/* aplicación de formato al parrafo del footer, con alineación al centro */
+footer p{
+    text-align: center;
+}
