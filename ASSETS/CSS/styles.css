@@ -198,13 +198,15 @@ footer p{
 }
 
 
-@media (min-width: 768px){
+/* tablet y celulares */
+@media (min-width: 768px){                                                                                  
 
     #contenedor-fotos{
         flex-direction: row;
     }
 }
 
+/*notebook, pantallas de pc escritorio */
 @media (min-width: 1024px){
 
     section{
