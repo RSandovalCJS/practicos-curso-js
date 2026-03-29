@@ -2,90 +2,126 @@
                                                                                                                                 <!-- esto se usa para garantizar compatibilidad en la variedad de navegadores -->   
 
 <html lang="es">                                                                                                                <!-- Inicio del documento html e indicamos que el idioma principal es el español -->                                
-
+    
 
 <head>                                                                                                                          <!-- Cabecera del documento html -->          
 
-    <meta charset="UTF-8">                                                                                                      <!-- Metadatos con la codificación de caracteres para el documento -->   
-    
+    <meta charset="UTF-8">                                                                                                      <!-- Metadatos con la codificación de caracteres para el documento -->                
+                                                            
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                      <!-- para que se use el ancho real de dispositivo y no se haga zoom automatico -->
+
     <title>Patitas Felices</title>                                              
 
-    <link rel="stylesheet" href="./ASSETS/CSS/styles.css">                                                                      <!-- Hoja de estilo .css (futura) / por ahora se aplican formatos localmente :-) -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">                      <!-- Se carga boostrap desde internet usando enlace  (CDN) --> 
+    <link rel="stylesheet" href="./ASSETS/CSS/styles.css">                                                                      <!-- Hoja de estilo .css local -->
 </head>                                                                        
 
 <body>                                                                                                                          <!-- Cuerpo del documento html -->   
     
 
     <header>                                                                                                                    <!-- Encabezado de la página web-->   
-        
-        <h1>                                                                                                                    <!-- estilo aplicado a h1 se mueve a .css-->
-            Patitas Felices
-        </h1>                                                
-        
-        <p id="eslogan">                                                                                                        <!-- estilo aplicado a #eslogan se mueve a .css--> 
-            ¡Su bienestar, nuestra misión!
-        </p>                                       
+                
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./ASSETS/IMG/imagen_logo.PNG" alt="logo" class="logo-navbar me-2">                                    <!-- Se agrega imagen logo -->
+                    <div class="d-flex flex-column">
+                        <span class="titulo-navbar">Patitas Felices</span>
+                        <span class="eslogan-navbar">¡Su bienestar, nuestra misión!</span>
+                    </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">                      <!-- Botón tipo hamburguesa -->
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="menu">                                                                        <!-- Menú -->
+                <ul class="navbar-nav ms-auto text-center">
+
+                    <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#">🏠 Inicio</a>                                            <!-- Se usa recurso de emojis para "acompañar" titulos de las opciones del menu -->
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#">🛒 Productos</a>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link fw-semibold text-dark" href="#">📞 Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        </nav>  
         
     </header>                                                                   
 
-    <section>                                                                                                                   <!-- Sección principal: estilo aplicado en .css -->
+    <main class = "container mt-4">
 
-        <article>                                                                                                               <!-- Elemento article: Contenido principal -->
+        <section class ="py-3">                                                                                                     <!-- aplicamos clase boostrap para un padding vertical  -->                                                                                                          <!-- Se usa la clase "margin top" del css boostrap para generar un espacio con la navbar  -->                                                                                                  <!-- Sección principal: estilo aplicado en .css -->
+
+            <article>                                                                                                               <!-- Elemento article: Contenido principal -->
+                
+                <h2>                                                                                                                <!-- Subtitulo estilo aplicado en .css-->
+                    El cuidado de las mascotas
+                </h2>
+
+                <div id="contenedor-fotos">                                                                                         <!-- Contenedor para alinear las fotos, se aplica estilo en .css -->
+                    <img id="fotoperro"src="./ASSETS/IMG/imagen1.jpg" alt="humano abrazando perro">                                 <!-- imagen1 desde la carpeta IMG, se aplica estilo en .css -->       
+                    <img id="fotogato" src="./ASSETS/IMG/imagen2.jpg" alt="humano y gato jugando">                                  <!-- imagen2 desde la carpeta IMG, se aplica estilo en .css-->
+                </div>
             
-            <h2>                                                                                                                <!-- Subtitulo estilo aplicado en .css-->
-                El cuidado de las mascotas
-            </h2>
+                <p id="contenido-principal">                                                                                        <!-- Párrafo con el contenido principal, se aplica estilo en .css -->
+                    Quienes tenemos mascotas, sabemos que son parte importante de nuestras vidas.
+                    Requieren de nuestros cuidados para mantenerse saludables y felices, y a cambio 
+                    nos brindan su amor incondicional. Cuidarlas implica proporcionales una buena alimentación, 
+                    atención veterinaria y mucho cariño. Pasear a nuestro perro o jugar con nuestro gato 
+                    los mantiene activos y fortalece el vinculo que existe con nuestra mascota.
+                </p>   
 
-            <div id="contenedor-fotos">                                                                                         <!-- Contenedor para alinear las fotos, se aplica estilo en .css -->
-                <img id="fotoperro"src="./ASSETS/IMG/imagen1.jpg" alt="humano abrazando perro">                                 <!-- imagen1 desde la carpeta IMG, se aplica estilo en .css -->       
-                <img id="fotogato" src="./ASSETS/IMG/imagen2.jpg" alt="humano y gato jugando">                                  <!-- imagen2 desde la carpeta IMG, se aplica estilo en .css-->
-            </div>
+            </article>                                                              
+
+            <aside>                                                                                                                 <!-- Elemento aside: estilo aplicado en .css-->                                                
+                
+                <div id="contenedor-foto-aside">                                                                                    <!-- Contenedor para alinear la foto al centro, estilo aplicado en .css -->
+                    <img id ="fotojauria" src="./ASSETS/IMG/imagen3.jpg" alt="perros mirando">                                      <!-- imagen3 desde la carpeta IMG, se aplica estilo en .css -->
+                </div>
+
+                <p id="mensaje">                                                                                                    <!-- Párrafo con frase final, se aplica estilo en .css -->
+                    ¡Prefiere adoptar, a comprar!
+                </p>                                                                             
+                
+
+                <h3>                                                                                                                <!-- Subtítulo para la sección de enlaces, se aplica estilo en .css -->
+                    Enlaces que te pueden interesar:                                                                                   
+                </h3>
+                
+                <ul>                                                                                                                <!-- Lista no ordenada con enlaces a recursos relacionados -->      
+                    <li><a href="https://www.mascotas-felices.com/">Mascotas felices: Consejos y cuidados para mascotas.</a></li>                             
+                    <li><a href="https://pawify.dev/">Pawify: Plataforma centrada en la adopción de mascotas</a></li>
+                    <li><a href="https://www.zooplus.es/magazine">Zooplus Magazine: Consejos sobre cuidados y tenencia de mascotas</a></li>
+
+                </ul>
+
+            </aside>                                                                
+
+        </section>                                                                              
+
+        <footer>                                                                                                                    <!-- Pie de página, estilo aplicado en .css -->
+
+            <p>                                                                                                                     <!-- Autor - curso y año -->
+                Rodrigo Sandoval Sandoval - Curso Javascript 2026 
+            </p>              
         
-            <p id="contenido-principal">                                                                                        <!-- Párrafo con el contenido principal, se aplica estilo en .css -->
-                Quienes tenemos mascotas, sabemos que son parte importante de nuestras vidas.
-                Requieren de nuestros cuidados para mantenerse saludables y felices, y a cambio 
-                nos brindan su amor incondicional. Cuidarlas implica proporcionales una buena alimentación, 
-                atención veterinaria y mucho cariño. Pasear a nuestro perro o jugar con nuestro gato 
-                los mantiene activos y fortalece el vinculo que existe con nuestra mascota.
-            </p>   
+        </footer>                                                                      
 
-        </article>                                                              
+</main>
 
-        <aside>                                                                                                                 <!-- Elemento aside: estilo aplicado en .css-->                                                
-            
-            <div id="contenedor-foto-aside">                                                                                    <!-- Contenedor para alinear la foto al centro, estilo aplicado en .css -->
-                <img id ="fotojauria" src="./ASSETS/IMG/imagen3.jpg" alt="perros mirando">                                      <!-- imagen3 desde la carpeta IMG, se aplica estilo en .css -->
-            </div>
-
-            <p id="mensaje">                                                                                                    <!-- Párrafo con frase final, se aplica estilo en .css -->
-                ¡Prefiere adoptar, a comprar!
-            </p>                                                                             
-            
-
-            <h3>                                                                                                                <!-- Subtítulo para la sección de enlaces, se aplica estilo en .css -->
-                Enlaces que te pueden interesar:                                                                                   
-            </h3>
-            
-            <ul>                                                                                                                <!-- Lista no ordenada con enlaces a recursos relacionados -->      
-                <li><a href="https://www.mascotas-felices.com/">Mascotas felices: Consejos y cuidados para mascotas.</a></li>                             
-                <li><a href="https://pawify.dev/">Pawify: Plataforma centrada en la adopción de mascotas</a></li>
-                <li><a href="https://www.zooplus.es/magazine">Zooplus Magazine: Consejos sobre cuidados y tenencia de mascotas</a></li>
-
-            </ul>
-
-        </aside>                                                                
-
-    </section>                                                                              
-
-    <footer>                                                                                                                    <!-- Pie de página, estilo aplicado en .css -->
-
-        <p>                                                                                                                     <!-- Autor - curso y año -->
-            Rodrigo Sandoval Sandoval - Curso Javascript 2026 
-        </p>              
-    
-    </footer>                                                                      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>                               <!-- script .js para activar los componentes interactivos de boostrap -->
 
 </body>                                                                         
 
-</html>                                                                                                                           <!-- Fin del documento HTML -->
+</html>                                                                                                                             <!-- Fin del documento HTML -->
