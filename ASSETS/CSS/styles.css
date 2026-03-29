@@ -188,7 +188,7 @@ footer{
 
     border: 2px solid olive;
     padding: 10px;
-    background-color: lightyellow;    
+    background-color: lightyellow;   
 }
 
 
@@ -197,6 +197,16 @@ footer p{
     text-align: center;
 }
 
+
+/* aplicación de color de fondo a la nueva seccion proximamente */
+.seccion-proximamente {
+    background-color: lightyellow;
+    border: 2px solid olive;
+    min-height: 500px; /* 🔥 ajusta aquí */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra vertical */
+}
 
 /* tablet y celulares */
 @media (min-width: 768px){                                                                                  
@@ -213,5 +223,14 @@ footer p{
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
+    }
+}
+
+/* ajuste para el boton en celulares */
+@media (max-width: 576px) {
+    #btn-arriba {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
     }
 }

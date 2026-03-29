@@ -14,6 +14,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">                      <!-- Se carga boostrap desde internet usando enlace  (CDN) --> 
     <link rel="stylesheet" href="./ASSETS/CSS/styles.css">                                                                      <!-- Hoja de estilo .css local -->
+
 </head>                                                                        
 
 <body>                                                                                                                          <!-- Cuerpo del documento html -->   
@@ -110,6 +111,13 @@
 
         </section>                                                                              
 
+        <section class="container my-5 text-center py-5 seccion-proximamente">                                                      <!-- Espacio nuevo: hereda clase boostrap: contenedor, texto centrado, margen vertical, padding vertical y la clase personalizada  -->
+            <h2>🐾 Próximamente...</h2>
+            <p class="lead">
+                Nuevos productos, ofertas y mucho más para tus mascotas.
+            </p>
+        </section>
+
         <footer>                                                                                                                    <!-- Pie de página, estilo aplicado en .css -->
 
             <p>                                                                                                                     <!-- Autor - curso y año -->
@@ -120,7 +128,12 @@
 
 </main>
 
+<button id="btn-arriba" class="btn btn-primary position-fixed bottom-0 end-0 m-3">                                                 <!-- boton color azul, flotante, pegado abajo, a la derecha con un margen  -->
+  Ir arriba
+</button>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>                               <!-- script .js para activar los componentes interactivos de boostrap -->
+<script src="ASSETS/JS/app.js"></script>
 
 </body>                                                                         
 
