@@ -1,0 +1,53 @@
+Comando	        Definición breve	                                            
+git --version	Muestra la versión instalada de Git	                            
+
+Ejemplo de uso
+"git --version" y la consola muestra: "git version 2.45.1"
+
+
+git init	    Inicializa un repositorio en la carpeta actual	                
+
+Ejemplo de uso
+"git init" y la consola muestra: "Initialized empty Git repository in /ruta/carpeta_proyecto/.git/"
+
+
+git add	        Agrega cambios al área de preparación (staging)	                
+
+Ejemplo de uso
+"git add ." y si todo salió bien no hay mensaje de retorno en consola.
+
+
+git commit	    Registra los cambios con un mensaje descriptivo	                
+
+Ejemplo de uso
+"git commit -m" "mensaje relacionado con los cambios" y si todo salió bien se recibe un mensaje como:
+[main 91e6a54] Cambios segun ejercicio practico: Integración de JavaScript al proyecto
+ 3 files changed, 49 insertions(+), 1 deletion(-)
+ create mode 100644 ASSETS/JS/app.js
+
+
+git status	    Muestra el estado del repositorio
+
+Ejemplo de uso
+"git status" donde la consola nos puede indica que tenemos:
+
+1.- Cambio sin "stegear"
+
+On branch main
+
+Changes not staged for commit:
+  modified: index.html
+
+Untracked files:
+  app.js
+
+2.- "Cambios "stageados" pero aun si "commitear":
+
+Changes to be committed:
+  new file: app.js
+  modified: index.html
+
+3.- Si no hay nada pendiente de "commitear:
+
+On branch main
+nothing to commit, working tree clean
